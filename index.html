@@ -1,0 +1,1255 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Manual del Jugador — Underdark West Marches (D&D REGLAS 2024)</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+<!-- Toggle sidebar móvil (CSS-only) --> 
+
+  <!-- Toggle sidebar móvil (CSS-only) -->
+  <input class="ui-toggle" type="checkbox" id="toggleNav" />
+  
+
+  <!-- “Router” CSS-only: cada radio muestra una página -->
+  <input class="route" type="radio" name="route" id="r-inicio" checked>
+<input class="route" type="radio" name="route" id="r-setting">
+<input class="route" type="radio" name="route" id="r-como">
+<input class="route" type="radio" name="route" id="r-personajes">
+<input class="route" type="radio" name="route" id="r-trasfondos">
+<input class="route" type="radio" name="route" id="r-multimesa">
+<input class="route" type="radio" name="route" id="r-herramientas">
+<input class="route" type="radio" name="route" id="r-faq">
+<input class="route" type="radio" name="route" id="r-registro">
+
+
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="sigil" aria-hidden="true"></span>
+      <div class="brandText">
+        <div class="titleRow">
+          <h1>Manual del Jugador</h1>
+          <span class="tag">D&D 2024</span>
+          <span class="tag tag2">West Marches</span>
+        </div>
+        <p class="subtitle">Underdark · Exploración · Supervivencia · Grupos dinámicos de jugadores</p>
+      </div>
+    </div>
+
+    <div class="topActions">
+      <label class="btn ghost mobileOnly" for="toggleNav" aria-label="Abrir menú">☰ Menú</label>
+      <label class="btn" for="r-registro">Registro</label>
+    </div>
+  </header>
+
+
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="sidebarInner">
+        <div class="navHead">
+          <div class="navTitle">Índice</div>
+          <label class="btn ghost mobileOnly" for="toggleNav">Cerrar</label>
+        </div>
+
+        <nav class="nav">
+        
+  <label class="navLink" for="r-registro">
+    <span class="dot"></span> Registro
+  </label>    
+          <label class="navLink" for="r-inicio">
+            <span class="dot"></span> Inicio
+          </label>
+
+          <div class="navGroup">
+            <div class="navGroupTitle">El Setting</div>
+            <label class="navLink" for="r-setting">
+              <span class="dot"></span> Visión general
+            </label>
+          </div>
+
+          <div class="navGroup">
+            <div class="navGroupTitle">Formato</div>
+            <label class="navLink" for="r-como">
+              <span class="dot"></span> Cómo se juega
+            </label>
+            <label class="navLink" for="r-personajes">
+              <span class="dot"></span> Personajes
+            </label>
+            <label class="navLink" for="r-trasfondos">
+  <span class="dot"></span> Trasfondos
+</label>
+            <label class="navLink" for="r-multimesa">
+              <span class="dot"></span> Multimesa y Multi-DM
+            </label>
+          </div>
+
+          <div class="navGroup">
+            <div class="navGroupTitle">Operación</div>
+            <label class="navLink" for="r-herramientas">
+              <span class="dot"></span> Herramientas compartidas
+            </label>
+            <label class="navLink" for="r-faq">
+              <span class="dot"></span> FAQ
+            </label>
+          </div>
+        </nav>
+
+        <div class="sidebarCard">
+          <div class="cardTitle">Regla de oro</div>
+          <p class="muted">
+            Cada sesión es una <b>expedición</b>: empieza y termina en la Base.
+            Lo que no queda en el Registro, no existe.
+          </p>
+        </div>
+
+        <div class="sidebarCard subtle">
+          <div class="cardTitle">Tono</div>
+          <ul class="miniList">
+            <li>Exploración primero</li>
+            <li>Combate peligroso</li>
+            <li>Social mínimo</li>
+            <li>Retirarse es válido</li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="doc">
+        <div class="crumbs">
+          <span class="crumb">Underdark West Marches</span>
+          <span class="sep">›</span>
+          <span class="crumb current" id="crumbCurrent">Manual</span>
+        </div>
+
+        <!-- INICIO -->
+        <section class="page p-inicio" aria-labelledby="h-inicio">
+          <header class="pageHead">
+            <h2 id="h-inicio">Inicio</h2>
+            <p class="lead">
+              Esta es una campaña West Marches: múltiples jugadores, múltiples grupos, un mundo persistente.
+              No hay “camino principal”; hay expediciones.
+            </p>
+          </header>
+
+          <div class="grid two">
+            <article class="panel">
+              <h3>Qué es este juego</h3>
+              <ul class="list">
+                <li>Pool grande de jugadores (más de 5 y creciendo).</li>
+                <li>Sesiones autoconclusivas: salir y volver a la Base. El viaje no necesariamente se narra si es muy extenso.</li>
+                <li>Conocimiento compartido: mapa + reportes.</li>
+                <li>Riesgo real: el mundo no está balanceado por nivel, deberán elegir sus peleas.</li>
+                <li>Una aventura centrada en el mundo y cómo es descubierto (Y enfrentado) por todos.</li>
+                <li>Una aventura centrada en el mundo y cómo es descubierto (Y enfrentado) por todos.</li>
+              </ul>
+            </article>
+
+            <article class="panel">
+              <h3>Qué NO es</h3>
+              <ul class="list warn">
+                <li>No es una historia lineal “capítulo a capítulo”.</li>
+                <li>No es un escenario donde todo está calibrado para ganar.</li>
+                <li>No es una aventura construida alrededor de personajes, los personajes deben ser construidos alrededor de lo que ofrece el setting.</li>
+                <li>No es para ignorar reportes y jugar aislado.</li>
+                <li>No es para quedarse en el pueblo fortaleza.</li>
+                <li>No es para salir del Underdark a ver a mi familia que extraño mucho.</li>
+              </ul>
+            </article>
+          </div>
+
+        <p class="quote">
+              NO TODAS LAS AVENTURAS SON PARA TODOS LOS JUGADORES. Lee este manual para ver si encaja con tus expectativas. No hay nada peor que jugar a algo que no quieres. Elige tu juego, encuentra tu mesa, disfruta del rol <3.
+            </p>
+
+          <div class="panel callout">
+            <h3>Cómo usar este manual</h3>
+            <ol class="list">
+              <li>Lee <b>El Setting</b> si quieres tono e imaginación.</li>
+              <li>Lee <b>Cómo se juega</b> si quieres entender el formato.</li>
+              <li>Lee <b>Personajes</b> si quieres saber si encajas.</li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- SETTING (AQUÍ VA TU RESEÑA) -->
+        <section class="page p-setting" aria-labelledby="h-setting">
+          <header class="pageHead">
+            <h2 id="h-setting">El Setting · Visión general</h2>
+            <p class="lead">Una frontera sin mapas, una fortaleza reciente, y algo que aprende a observar.</p>
+          </header>
+
+          <article class="panel">
+            <h3>Reseña</h3>
+            <p>
+              Más allá de las rutas conocidas del Underdark, donde los mapas se vuelven conjeturas y la piedra parece
+              resistirse a ser nombrada, <b>una fortaleza ha sido erigida en el borde mismo de lo desconocido</b>.
+              No es un bastión antiguo ni una ciudad olvidada: es una presencia reciente, deliberada, construida con
+              la intención explícita de <b>mirar hacia un territorio que nunca antes fue explorado</b>.
+            </p>
+            <p>
+              La facción que sostiene esta fortaleza —cuyo verdadero alcance aún no está claro— actúa como ancla y punto
+              de retorno. Desde allí parten las expediciones, se intercambia información fragmentaria y se evalúan pérdidas.
+              Todo lo que existe más allá de sus muros <b>no tiene nombre, ni historia registrada, ni promesa de equilibrio</b>.
+            </p>
+            <p>
+              En estas profundidades, la <b>faerzress</b> no es un fenómeno aislado. Se manifiesta en <b>oleadas</b>,
+              alterando la percepción, distorsionando la magia y erosionando la noción del tiempo. Permanecer demasiado
+              tiempo bajo tierra <b>deja huellas</b>, aunque no siempre sean visibles de inmediato.
+            </p>
+            <p>
+              Y algo más ocurre: el Underdark responde. La mera <b>presencia de exploradores</b> comienza a hacerse notar.
+              Rutas que antes parecían vacías ahora muestran signos de observación. Ecos que no pertenecen a nadie.
+              Siluetas que no atacan, pero siguen. <b>Ser visto no implica ser comprendido</b>.
+            </p>
+            <p class="quote">
+              El Underdark no espera ser conquistado. Solo observa quién se atreve a entrar… y quién logra volver.
+            </p>
+          </article>
+
+          <div class="grid two">
+            <article class="panel">
+              <h3>Promesa de experiencia</h3>
+              <ul class="list">
+                <li>Misterio geográfico real (lo desconocido se descubre).</li>
+                <li>Tensión ambiental (tiempo, recursos, acecho).</li>
+                <li>Hallazgos útiles (rutas, refugios, puntos de interés).</li>
+              </ul>
+            </article>
+            <article class="panel">
+              <h3>Riesgos esperables</h3>
+              <ul class="list warn">
+                <li>Perderse o quedarse sin margen de retorno.</li>
+                <li>Ser observado, seguido o marcado.</li>
+                <li>Encuentros imposibles si se elige mal la ruta.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <!-- CÓMO SE JUEGA -->
+        <section class="page p-como" aria-labelledby="h-como">
+          <header class="pageHead">
+            <h2 id="h-como">Cómo se juega</h2>
+            <p class="lead">Expediciones, registro, consecuencias. El conocimiento es el verdadero progreso.</p>
+          </header>
+
+          <div class="panel">
+            <h3>Ciclo de una expedición</h3>
+            <ol class="list">
+              <li>Proponen objetivo (lugar + intención).</li>
+              <li>Forman party (4–6 ideal; el pool total puede ser 12+).</li>
+              <li>Salen desde la Base, exploran, deciden riesgo, vuelven.</li>
+              <li>Publican reporte y actualizan el mapa.</li>
+            </ol>
+          </div>
+
+          <div class="grid two">
+            <article class="panel">
+              <h3>El juego premia</h3>
+              <ul class="list">
+                <li>Plan de luz/visión y plan de retirada.</li>
+                <li>Lectura del entorno: señales, huellas, ecos.</li>
+                <li>Elegir peleas: negociar/huir también es jugar bien.</li>
+                <li>Registrar: reportes claros y útiles.</li>
+              </ul>
+            </article>
+            <article class="panel">
+              <h3>El juego castiga</h3>
+              <ul class="list warn">
+                <li>Entrar sin margen para volver.</li>
+                <li>Pelear por orgullo contra algo superior.</li>
+                <li>Separarse sin coordinación en un lugar hostil.</li>
+                <li>Ignorar el “reloj” de expedición.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <!-- PERSONAJES -->
+        <section class="page p-personajes" aria-labelledby="h-personajes">
+          <header class="pageHead">
+            <h2 id="h-personajes">Personajes</h2>
+            <p class="lead">Qué builds y estilos encajan (y cuáles sufren) en West Marches.</p>
+          </header>
+
+          <div class="grid two">
+            <article class="panel">
+              <h3>Encaja bien si…</h3>
+              <ul class="list ok">
+                <li>Disfrutas explorar sin guion fijo.</li>
+                <li>Aceptas que retirarse es una victoria.</li>
+                <li>Te gusta aportar fuera de combate.</li>
+                <li>Te motiva el progreso compartido (mapa/reportes).</li>
+              </ul>
+            </article>
+            <article class="panel">
+              <h3>Sufres si…</h3>
+              <ul class="list warn">
+                <li>Necesitas historia personal garantizada cada sesión.</li>
+                <li>Te frustra perder recursos o personajes por riesgo.</li>
+                <li>No quieres leer reportes ni coordinarte.</li>
+                <li>Buscas protagonismo único.</li>
+              </ul>
+            </article>
+          </div>
+
+          <article class="panel">
+            <h3>Checklist de supervivencia</h3>
+            <div class="grid two">
+              <ul class="list">
+                <li>Razón simple y repetible para explorar.</li>
+                <li>Herramientas: cuerda, kit, raciones, luz.</li>
+                <li>Rol claro (exploración/soporte/control/daño).</li>
+              </ul>
+              <ul class="list">
+                <li>Plan de retirada (cuándo y cómo vuelven).</li>
+                <li>Capacidad de colaborar y decidir rápido.</li>
+                <li>Interés real por el Registro.</li>
+              </ul>
+            </div>
+          </article>
+        </section>
+
+                <!-- TRASFONDOS -->
+        <section class="page p-trasfondos" aria-labelledby="h-trasfondos">
+          <header class="pageHead">
+            <h2 id="h-trasfondos">Trasfondos</h2>
+            <p class="lead">
+              En este West Marches, los trasfondos no son “color”: definen <b>qué sabes</b>, qué equipo traes, y qué rumores iniciales
+              puedes aportar al Registro. Cada trasfondo incluye <b>3 rumores</b> (no todos son confiables).
+            </p>
+          </header>
+
+          <article class="panel callout">
+            <h3>Regla de rumores</h3>
+            <ul class="list">
+              <li>Un rumor suele ser <b>mayormente cierto</b>.</li>
+              <li>Uno suele estar <b>incompleto o malinterpretado</b>.</li>
+              <li>Uno suele ser <b>peligroso</b> si se toma literal.</li>
+            </ul>
+          </article>
+
+          <div class="bgGrid">
+
+            <!-- 01 -->
+<article class="panel bgCard" id="bg-scout">
+  <div class="bgHeader">
+    <h3>1) Explorador (Scout)</h3>
+    <span class="bgTag">Exploración</span>
+  </div>
+
+  <div class="bgMedia">
+    <div class="bgThumb">
+      <div class="bgThumbEmpty">Sin imagen<br>por ahora</div>
+    </div>
+
+    <div>
+      <p class="muted">
+        El Oeste cambió, pero tu impulso por explorar no. Respondes al llamado del territorio aunque murmure cosas raras.
+        Has visto lugares lejanos, y vienes por <b>nuevas rutas</b>, no por historias.
+      </p>
+    </div>
+  </div>
+
+  <div class="bgCols">
+    <div>
+      <h4>Rasgo: Pionero intrépido</h4>
+      <p class="muted">
+        Eres un guía excepcional. Tu lectura del terreno vuelve el viaje más eficiente:
+        mientras tú navegas, la <b>velocidad de viaje del grupo se duplica</b>.
+      </p>
+
+      <div class="rumors">
+        <h4>Rumores (3)</h4>
+        <ul class="rumorList">
+          <li class="rumor">“Hay corrientes de aire que no vienen de ningún túnel… como si respirara la piedra.”</li>
+          <li class="rumor">“Algunas huellas se repiten en lugares distintos, el mismo patrón, como si alguien ‘copiara’ rutas.”</li>
+          <li class="rumor">“Los mapas viejos sirven… hasta que el suelo decide cambiarlos.”</li>
+        </ul>
+      </div>
+    </div>
+
+    <aside class="bgMeta">
+      <h4>Competencias y equipo</h4>
+      <dl class="kv">
+        <div class="kvItem"><div class="kvKey">Habilidades</div><div class="kvVal">Manejo de Animales, Supervivencia</div></div>
+        <div class="kvItem"><div class="kvKey">Herramientas</div><div class="kvVal">Kit de herboristería</div></div>
+        <div class="kvItem"><div class="kvKey">Idiomas</div><div class="kvVal">1 idioma común</div></div>
+        <div class="kvItem"><div class="kvKey">Equipo</div><div class="kvVal">Kit de herboristería, un recuerdo de una tierra lejana, brújula, ropas comunes, 10 po</div></div>
+      </dl>
+    </aside>
+  </div>
+</article>
+
+<!-- 02 -->
+<article class="panel bgCard" id="bg-cartografo">
+  <div class="bgHeader">
+    <h3>2) Archivista (Archivist)</h3>
+    <span class="bgTag">Registro</span>
+  </div>
+
+  <div class="bgMedia">
+    <div class="bgThumb">
+      <div class="bgThumbEmpty">Sin imagen<br>por ahora</div>
+    </div>
+
+    <div>
+      <p class="muted">
+        Has escuchado historias de lenguas nuevas, culturas extrañas y ruinas imposibles más allá.
+        Sales a registrar lo que exista: runas, pergaminos anacrónicos y testimonios de criaturas nunca vistas.
+      </p>
+    </div>
+  </div>
+
+  <div class="bgCols">
+    <div>
+      <h4>Rasgo: Aptitud lingüística</h4>
+      <p class="muted">
+        Los Archivos de Las Paredes están abiertos para ti. Antes de un viaje, puedes pedir prestados materiales de traducción
+        para <b>1 idioma nuevo</b> (ver lista). Mientras lleves esos materiales, se te trata como si conocieras ese idioma.
+      </p>
+
+      <div class="rumors">
+        <h4>Rumores (3)</h4>
+        <ul class="rumorList">
+          <li class="rumor">“Hay un muro escrito en tres lenguas… y una cuarta que nadie reconoce.”</li>
+          <li class="rumor">“Se halló un diario ‘de mañana’: describe eventos que aún no ocurren.”</li>
+          <li class="rumor">“Un símbolo repetido aparece donde muere la luz. No es drow.”</li>
+        </ul>
+      </div>
+    </div>
+
+    <aside class="bgMeta">
+      <h4>Competencias y equipo</h4>
+      <dl class="kv">
+        <div class="kvItem"><div class="kvKey">Habilidades</div><div class="kvVal">Historia, Investigación</div></div>
+        <div class="kvItem"><div class="kvKey">Herramientas</div><div class="kvVal">—</div></div>
+        <div class="kvItem"><div class="kvKey">Idiomas</div><div class="kvVal">1 idioma común, 1 idioma nuevo</div></div>
+        <div class="kvItem"><div class="kvKey">Equipo</div><div class="kvVal">Pluma estilográfica, diario grande, libro raro (del idioma exótico elegido), ropas comunes, 15 po</div></div>
+      </dl>
+
+      <h4 style="margin-top:12px;">Idiomas nuevos (d8)</h4>
+      <ul class="rumorList">
+        <li class="rumor">1 Abisal</li>
+        <li class="rumor">2 Celestial</li>
+        <li class="rumor">3 Dracónico</li>
+        <li class="rumor">4 Enano</li>
+        <li class="rumor">5 Élfico</li>
+        <li class="rumor">6 Infernal</li>
+        <li class="rumor">7 Orco</li>
+        <li class="rumor">8 Silvano</li>
+      </ul>
+    </aside>
+  </div>
+</article>
+
+<!-- 03 -->
+<article class="panel bgCard" id="bg-minero">
+  <div class="bgHeader">
+    <h3>3) Saqueador (Plunderer)</h3>
+    <span class="bgTag">Botín</span>
+  </div>
+
+  <div class="bgMedia">
+    <div class="bgThumb">
+      <div class="bgThumbEmpty">Sin imagen<br>por ahora</div>
+    </div>
+
+    <div>
+      <p class="muted">
+        Para ti hay una verdad simple: allá afuera hay riqueza, y es tuya si sobrevives.
+        No te interesa “lo correcto”, te interesa <b>lo valioso</b>.
+      </p>
+    </div>
+  </div>
+
+  <div class="bgCols">
+    <div>
+      <h4>Rasgo: Ojo para el valor</h4>
+      <p class="muted">
+        Tienes experiencia manejando objetos valiosos. Puedes estimar el <b>valor aproximado</b> de la mayoría de las cosas
+        y, por tus contactos, encontrar comprador al este para aquello que puedas tasar.
+        (Algunas reliquias pueden ser demasiado extrañas para evaluarlas así.)
+      </p>
+
+      <div class="rumors">
+        <h4>Rumores (3)</h4>
+        <ul class="rumorList">
+          <li class="rumor">“Hay un lote de joyería ‘barata’… pero cada pieza está marcada con un símbolo de advertencia.”</li>
+          <li class="rumor">“Alguien compra arte en secreto. Paga más si viene con sangre.”</li>
+          <li class="rumor">“Una veta brillante no es mineral: es algo vivo que parece oro.”</li>
+        </ul>
+      </div>
+    </div>
+
+    <aside class="bgMeta">
+      <h4>Competencias y equipo</h4>
+      <dl class="kv">
+        <div class="kvItem"><div class="kvKey">Habilidades</div><div class="kvVal">Percepción, Sigilo</div></div>
+        <div class="kvItem"><div class="kvKey">Herramientas</div><div class="kvVal">Kit de falsificación</div></div>
+        <div class="kvItem"><div class="kvKey">Idiomas</div><div class="kvVal">1 idioma común</div></div>
+        <div class="kvItem"><div class="kvKey">Equipo</div><div class="kvVal">Kit de falsificación, pértiga de 10 pies, daga grabada en idioma extranjero, ropas comunes, 20 po</div></div>
+      </dl>
+
+      <h4 style="margin-top:12px;">Profesión previa (d8)</h4>
+      <ul class="rumorList">
+        <li class="rumor">1 Explorador</li>
+        <li class="rumor">2 Joyero</li>
+        <li class="rumor">3 Arqueólogo</li>
+        <li class="rumor">4 Aristócrata</li>
+        <li class="rumor">5 Artesano</li>
+        <li class="rumor">6 Artista</li>
+        <li class="rumor">7 Curador</li>
+        <li class="rumor">8 Minero</li>
+      </ul>
+    </aside>
+  </div>
+</article>
+
+<!-- 04 -->
+<article class="panel bgCard" id="bg-erudito">
+  <div class="bgHeader">
+    <h3>4) Taumaturgo (Thaumaturge)</h3>
+    <span class="bgTag">Arcano</span>
+  </div>
+
+  <div class="bgMedia">
+    <div class="bgThumb">
+      <div class="bgThumbEmpty">Sin imagen<br>por ahora</div>
+    </div>
+
+    <div>
+      <p class="muted">
+        La ciencia y la investigación intentan explicar los efectos de la Gran Conflagración.
+        Tú juraste seguir intentando: desentrañar lo arcano, reescribir leyes de la naturaleza, y venir al origen de todo esto.
+      </p>
+    </div>
+  </div>
+
+  <div class="bgCols">
+    <div>
+      <h4>Rasgo: Aprendizajes arcanos</h4>
+      <p class="muted">
+        Tus estudios te dan intuiciones que otros no tienen. Una vez por viaje, puedes intentar <b>identificar propiedades</b>
+        de un objeto mágico. Puede que sigas sin comprenderlo del todo, pero este proceso <b>sí revela maldiciones</b>.
+        También puedes hacerlo una vez durante cada periodo de inactividad.
+      </p>
+
+      <div class="rumors">
+        <h4>Rumores (3)</h4>
+        <ul class="rumorList">
+          <li class="rumor">“Hay un objeto que ‘se porta bien’… hasta que lo nombras en voz alta.”</li>
+          <li class="rumor">“Un foco arcano encontrado al oeste apaga conjuros como si bebiera magia.”</li>
+          <li class="rumor">“Los libros del Thaumaturgium tienen páginas pegadas. No es humedad.”</li>
+        </ul>
+      </div>
+    </div>
+
+    <aside class="bgMeta">
+      <h4>Competencias y equipo</h4>
+      <dl class="kv">
+        <div class="kvItem"><div class="kvKey">Habilidades</div><div class="kvVal">Arcanos, Juego de Manos</div></div>
+        <div class="kvItem"><div class="kvKey">Herramientas</div><div class="kvVal">—</div></div>
+        <div class="kvItem"><div class="kvKey">Idiomas</div><div class="kvVal">2 idiomas comunes</div></div>
+        <div class="kvItem"><div class="kvKey">Equipo</div><div class="kvVal">Foco arcano o bolsa de componentes, lupa, libro con tus estudios arcanos, ropas comunes, 10 po</div></div>
+      </dl>
+    </aside>
+  </div>
+</article>
+
+<!-- 05 -->
+<article class="panel bgCard" id="bg-mensajero">
+  <div class="bgHeader">
+    <h3>5) Terrateniente (Landed)</h3>
+    <span class="bgTag">Influencia</span>
+  </div>
+
+  <div class="bgMedia">
+    <div class="bgThumb">
+      <div class="bgThumbEmpty">Sin imagen<br>por ahora</div>
+    </div>
+
+    <div>
+      <p class="muted">
+        El Oeste está lleno de oportunidades sin dueño… y tu derecho de nacimiento es una de ellas.
+        Tu familia te abrió camino, pero aquí igual necesitas <b>carácter</b> para ganar poder, dinero o prestigio.
+      </p>
+    </div>
+  </div>
+
+  <div class="bgCols">
+    <div>
+      <h4>Rasgo: Propiedades aristocráticas</h4>
+      <p class="muted">
+        Tu familia te otorgó una propiedad en (o cerca del) este de Las Paredes, con una casa grande y un sirviente/administrador
+        que la mantiene por ti (no viaja contigo).
+        Durante tiempos muertos, puedes influir de forma concreta en la estructura de Las Paredes: permisos, impuestos, favores,
+        obras, contratos.
+      </p>
+
+      <div class="rumors">
+        <h4>Rumores (3)</h4>
+        <ul class="rumorList">
+          <li class="rumor">“Hay títulos de propiedad que no figuran en ningún registro… y aun así ‘valen’.”</li>
+          <li class="rumor">“Un noble perdió su finca en una apuesta. Ahora la finca pide ‘tributo’ sola.”</li>
+          <li class="rumor">“La ruta más segura al oeste pasa por terreno ‘privado’. Alguien cobra peaje con sangre.”</li>
+        </ul>
+      </div>
+    </div>
+
+    <aside class="bgMeta">
+      <h4>Competencias y equipo</h4>
+      <dl class="kv">
+        <div class="kvItem"><div class="kvKey">Habilidades</div><div class="kvVal">Engaño, Persuasión</div></div>
+        <div class="kvItem"><div class="kvKey">Herramientas</div><div class="kvVal">1 tipo de juego (naipes, dados, etc.)</div></div>
+        <div class="kvItem"><div class="kvKey">Idiomas</div><div class="kvVal">1 idioma común</div></div>
+        <div class="kvItem"><div class="kvKey">Equipo</div><div class="kvVal">Juego de apuestas, reloj de bolsillo familiar, pase de diligencia, ropas finas, 25 po</div></div>
+      </dl>
+    </aside>
+  </div>
+</article>
+
+<!-- 06 -->
+<article class="panel bgCard" id="bg-superviviente">
+  <div class="bgHeader">
+    <h3>6) Marcado por lo Sobrenatural (Haunted)</h3>
+    <span class="bgTag">Maldición</span>
+  </div>
+
+  <div class="bgMedia">
+    <div class="bgThumb">
+      <div class="bgThumbEmpty">Sin imagen<br>por ahora</div>
+    </div>
+
+    <div>
+      <p class="muted">
+        La Gran Conflagración encendió el cielo… y abrió puertas a cosas oscuras.
+        Tuviste un encuentro breve con lo sobrenatural y quedaste con una marca: cambio físico,
+        miedo específico, o una racha de mala fortuna.
+      </p>
+    </div>
+  </div>
+
+  <div class="bgCols">
+    <div>
+      <h4>Rasgo: Recuerdo maldito</h4>
+      <p class="muted">
+        Tienes un “memento” ligado a tu encuentro. Pase lo que pase, el objeto vuelve a ti al día siguiente.
+        Es claramente inquietante, la gente común desconfía, pero puedes usarlo como <b>foco de lanzamiento de conjuros</b>.
+      </p>
+
+      <div class="rumors">
+        <h4>Rumores (3)</h4>
+        <ul class="rumorList">
+          <li class="rumor">“Hay objetos que regresan solos… y cada retorno se siente ‘más pesado’.”</li>
+          <li class="rumor">“Las marcas no atraen monstruos. Atraen ‘momentos’ malos.”</li>
+          <li class="rumor">“Si tu memento deja de volver… es porque tú no volviste del todo.”</li>
+        </ul>
+      </div>
+    </div>
+
+    <aside class="bgMeta">
+      <h4>Competencias y equipo</h4>
+      <dl class="kv">
+        <div class="kvItem"><div class="kvKey">Habilidades</div><div class="kvVal">Naturaleza, Religión</div></div>
+        <div class="kvItem"><div class="kvKey">Herramientas</div><div class="kvVal">1 instrumento musical, kit de herboristería</div></div>
+        <div class="kvItem"><div class="kvKey">Idiomas</div><div class="kvVal">—</div></div>
+        <div class="kvItem"><div class="kvKey">Equipo</div><div class="kvVal">Instrumento musical, kit de herboristería, escrito críptico ligado a tu maldición, ropas comunes, 5 po</div></div>
+      </dl>
+
+      <h4 style="margin-top:12px;">Memento (d8)</h4>
+      <ul class="rumorList">
+        <li class="rumor">1 Brújula rota que apunta al peligro</li>
+        <li class="rumor">2 Anillo que quema al acercarte a la muerte</li>
+        <li class="rumor">3 Relicario con un retrato que cambia (de alguien que nunca conociste)</li>
+        <li class="rumor">4 Reloj que avanza hacia medianoche mientras más al oeste vas</li>
+        <li class="rumor">5 Aros que susurran amenazas que no logras entender</li>
+        <li class="rumor">6 Pluma que escribe con tu sangre</li>
+        <li class="rumor">7 Tatuaje cambiante que muestra tu pesadilla</li>
+        <li class="rumor">8 Cartas con reversos que parpadean como ojos inhumanos</li>
+      </ul>
+    </aside>
+  </div>
+</article>
+
+<!-- 07 -->
+<article class="panel bgCard" id="bg-cazador">
+  <div class="bgHeader">
+    <h3>7) Cazador (Hunter)</h3>
+    <span class="bgTag">Rastreo</span>
+  </div>
+
+  <div class="bgMedia">
+    <div class="bgThumb">
+      <div class="bgThumbEmpty">Sin imagen<br>por ahora</div>
+    </div>
+
+    <div>
+      <p class="muted">
+        Te gusta la persecución: el pulso, el cálculo, la trampa cerrándose.
+        Sea bestia, monstruo o alguien con precio por su cabeza, tu especialidad es <b>encontrar</b>.
+      </p>
+    </div>
+  </div>
+
+  <div class="bgCols">
+    <div>
+      <h4>Rasgo: Rastreador experto</h4>
+      <p class="muted">
+        El rastro de tu presa no se te escapa. Una vez por viaje, puedes elegir una criatura de la que hayas oído hablar.
+        Sabes <b>qué buscar</b> para encontrar su rastro (o dónde conseguir información sobre dónde encontrarla).
+        Puede ser específico (“el jabalí que robó raciones”) o general (“algo que haga buen filete”).
+      </p>
+
+      <div class="rumors">
+        <h4>Rumores (3)</h4>
+        <ul class="rumorList">
+          <li class="rumor">“Hay un depredador que nunca deja huellas… pero sí deja silencio.”</li>
+          <li class="rumor">“Los carteles de recompensa mienten: describen a la presa, no a lo que la acompaña.”</li>
+          <li class="rumor">“Una trampa bien puesta sirve… hasta que el oeste aprende tu olor.”</li>
+        </ul>
+      </div>
+    </div>
+
+    <aside class="bgMeta">
+      <h4>Competencias y equipo</h4>
+      <dl class="kv">
+        <div class="kvItem"><div class="kvKey">Habilidades</div><div class="kvVal">Naturaleza, Supervivencia</div></div>
+        <div class="kvItem"><div class="kvKey">Herramientas</div><div class="kvVal">1 tipo de herramientas de artesano</div></div>
+        <div class="kvItem"><div class="kvKey">Idiomas</div><div class="kvVal">1 idioma común</div></div>
+        <div class="kvItem"><div class="kvKey">Equipo</div><div class="kvVal">Herramientas de artesano (1), trampa de caza, recuerdo de una cacería, ropas comunes, 10 po</div></div>
+      </dl>
+    </aside>
+  </div>
+</article>
+
+<!-- 08 -->
+<article class="panel bgCard" id="bg-ruinas">
+  <div class="bgHeader">
+    <h3>8) Forajido (Outlaw)</h3>
+    <span class="bgTag">Crimen</span>
+  </div>
+
+  <div class="bgMedia">
+    <div class="bgThumb">
+      <div class="bgThumbEmpty">Sin imagen<br>por ahora</div>
+    </div>
+
+    <div>
+      <p class="muted">
+        La Gran Conflagración volvió el oeste peligroso, pero tú sabes que la sociedad es una capa delgada sobre lo mismo de siempre.
+        Viviste al borde por mucho tiempo… hasta que tu pasado te alcanzó. Aquí, en Las Paredes, todos fingen que tienes hoja en blanco.
+      </p>
+    </div>
+  </div>
+
+  <div class="bgCols">
+    <div>
+      <h4>Rasgo: Botín del pasado</h4>
+      <p class="muted">
+        Conservas algo valioso de tu vida criminal que te llevó al oeste.
+        Elige una opción del d8 (o crea otra con aprobación del DM).
+      </p>
+
+      <div class="rumors">
+        <h4>Rumores (3)</h4>
+        <ul class="rumorList">
+          <li class="rumor">“Hay un ‘punto ciego’ en la ciudad donde nadie recuerda tu cara… aunque te mire de frente.”</li>
+          <li class="rumor">“Los mejores disfraces no son ropa: son papeles.”</li>
+          <li class="rumor">“Al oeste, algunos delitos ‘despiertan’ cosas que te siguen hasta la cama.”</li>
+        </ul>
+      </div>
+    </div>
+
+    <aside class="bgMeta">
+      <h4>Competencias y equipo</h4>
+      <dl class="kv">
+        <div class="kvItem"><div class="kvKey">Habilidades</div><div class="kvVal">Engaño, Juego de Manos</div></div>
+        <div class="kvItem"><div class="kvKey">Herramientas</div><div class="kvVal">Kit de disfraz, herramientas de ladrón</div></div>
+        <div class="kvItem"><div class="kvKey">Idiomas</div><div class="kvVal">—</div></div>
+        <div class="kvItem"><div class="kvKey">Equipo</div><div class="kvVal">Kit de disfraz, herramientas de ladrón, recordatorio de un crimen, ropas comunes, 15 po</div></div>
+      </dl>
+
+      <h4 style="margin-top:12px;">Botín (d8)</h4>
+      <ul class="rumorList">
+        <li class="rumor">1 Mapa obtuso al escondite de un amigo perdido</li>
+        <li class="rumor">2 Tomo críptico de un aristócrata excéntrico</li>
+        <li class="rumor">3 Daga dorada que “tira” hacia el oeste</li>
+        <li class="rumor">4 Gema que revela un paisaje al sostenerla contra la luz</li>
+        <li class="rumor">5 Pistola elaborada con un número rúnico grabado</li>
+        <li class="rumor">6 Criatura extraña (CR 0) no vista antes de la Conflagración</li>
+        <li class="rumor">7 Mazo metálico con monstruos “regios” y bizarros</li>
+        <li class="rumor">8 Retrato de un lugar que solo viste en sueños</li>
+      </ul>
+    </aside>
+  </div>
+</article>
+
+<!-- 09 -->
+<article class="panel bgCard" id="bg-quartermaster">
+  <div class="bgHeader">
+    <h3>9) Manitas / Inventor (Tinkerer)</h3>
+    <span class="bgTag">Ingeniería</span>
+  </div>
+
+  <div class="bgMedia">
+    <div class="bgThumb">
+      <div class="bgThumbEmpty">Sin imagen<br>por ahora</div>
+    </div>
+
+    <div>
+      <p class="muted">
+        Eres creador, inventor, genio… o al menos el único que se atreve a probar.
+        La Conflagración amplió tus herramientas y el “fuego del cielo” es tu nuevo lienzo.
+      </p>
+    </div>
+  </div>
+
+  <div class="bgCols">
+    <div>
+      <h4>Rasgo: Ingenio sin riendas</h4>
+      <p class="muted">
+        Tu creatividad creció trabajando con otros inventores en el Taller.
+        Una vez por viaje, puedes crear un objeto mundano de las tablas de equipo (o inventar uno nuevo)
+        durante un descanso corto: valor máximo <b>20 po</b> y tamaño máximo <b>Pequeño</b>.
+        Si decides inventar algo, tira en la tabla de fallas: al final del viaje, el objeto se rompe y no vale nada.
+      </p>
+
+      <div class="rumors">
+        <h4>Rumores (3)</h4>
+        <ul class="rumorList">
+          <li class="rumor">“Algunos mecanismos funcionan perfecto… hasta que los llevas a una zona ‘cargada’.”</li>
+          <li class="rumor">“Hay planos viejos que se corrigen solos, como si alguien escribiera encima por las noches.”</li>
+          <li class="rumor">“El ‘fuego del cielo’ sirve de combustible, pero atrae cosas que lo huelen.”</li>
+        </ul>
+      </div>
+    </div>
+
+    <aside class="bgMeta">
+      <h4>Competencias y equipo</h4>
+      <dl class="kv">
+        <div class="kvItem"><div class="kvKey">Habilidades</div><div class="kvVal">Arcanos, Investigación</div></div>
+        <div class="kvItem"><div class="kvKey">Herramientas</div><div class="kvVal">1 tipo de herramientas de artesano, herramientas de manitas</div></div>
+        <div class="kvItem"><div class="kvKey">Idiomas</div><div class="kvVal">—</div></div>
+        <div class="kvItem"><div class="kvKey">Equipo</div><div class="kvVal">Herramientas de artesano (1), herramientas de manitas, estuche de planos, gafas, ropas comunes, 15 po</div></div>
+      </dl>
+
+      <h4 style="margin-top:12px;">Fallas (d8)</h4>
+      <ul class="rumorList">
+        <li class="rumor">1 Explota 5% del tiempo (3d6 daño de fuego al usuario)</li>
+        <li class="rumor">2 Se hace añicos si alguien más lo toca</li>
+        <li class="rumor">3 Falla 10% del tiempo</li>
+        <li class="rumor">4 Funciona 50% del tiempo</li>
+        <li class="rumor">5 Se adhiere con fuerza a todo lo que toca</li>
+        <li class="rumor">6 Se calienta muchísimo tras cada uso</li>
+        <li class="rumor">7 Chilla fuerte con cada uso</li>
+        <li class="rumor">8 Sin falla</li>
+      </ul>
+    </aside>
+  </div>
+</article>
+
+<!-- 10 -->
+<article class="panel bgCard" id="bg-agente">
+  <div class="bgHeader">
+    <h3>10) Sacerdote (Priest)</h3>
+    <span class="bgTag">Fe</span>
+  </div>
+
+  <div class="bgMedia">
+    <div class="bgThumb">
+      <div class="bgThumbEmpty">Sin imagen<br>por ahora</div>
+    </div>
+
+    <div>
+      <p class="muted">
+        La Conflagración dividió a los fieles: algunos lo llaman milagro, otros blasfemia.
+        Tu fe te trajo aquí, al oeste, donde las bendiciones son reales y la corrupción también.
+      </p>
+    </div>
+  </div>
+
+  <div class="bgCols">
+    <div>
+      <h4>Rasgo: Bendición de los fieles</h4>
+      <p class="muted">
+        Sigues una fe (o un credo) y reconoces a quienes la siguen… y ellos te reconocen.
+        Te darán refugio y ayuda salvo razones fuertes para no hacerlo.
+        Tu fe ha establecido un templo/iglesia en (o cerca del) este de Las Paredes, que puedes usar como hogar y lugar de sermones.
+      </p>
+
+      <div class="rumors">
+        <h4>Rumores (3)</h4>
+        <ul class="rumorList">
+          <li class="rumor">“Hay una ‘bendición’ que cura… pero deja un símbolo en la piel.”</li>
+          <li class="rumor">“Algunos santos del oeste no existían antes. ‘Aparecieron’ con la Conflagración.”</li>
+          <li class="rumor">“Un templo abandonado responde a rezos… aunque nadie lo habite.”</li>
+        </ul>
+      </div>
+    </div>
+
+    <aside class="bgMeta">
+      <h4>Competencias y equipo</h4>
+      <dl class="kv">
+        <div class="kvItem"><div class="kvKey">Habilidades</div><div class="kvVal">Medicina, Religión</div></div>
+        <div class="kvItem"><div class="kvKey">Herramientas</div><div class="kvVal">—</div></div>
+        <div class="kvItem"><div class="kvKey">Idiomas</div><div class="kvVal">1 idioma común y Celestial</div></div>
+        <div class="kvItem"><div class="kvKey">Equipo</div><div class="kvVal">Símbolo sagrado, instrumento de oración (libro/cuentas/rueda, etc.), kit de sanador, vestimentas, ropas comunes, 15 po</div></div>
+      </dl>
+
+      <h4 style="margin-top:12px;">Religión (d8)</h4>
+      <ul class="rumorList">
+        <li class="rumor">1 Catolicismo</li>
+        <li class="rumor">2 Judaísmo</li>
+        <li class="rumor">3 Budismo</li>
+        <li class="rumor">4 Wicca</li>
+        <li class="rumor">5 Protestantismo</li>
+        <li class="rumor">6 Islam</li>
+        <li class="rumor">7 Hinduismo</li>
+        <li class="rumor">8 Zoroastrismo</li>
+      </ul>
+    </aside>
+  </div>
+</article>
+
+<!-- 11 -->
+<article class="panel bgCard" id="bg-custodio">
+  <div class="bgHeader">
+    <h3>11) Veterano (Veteran)</h3>
+    <span class="bgTag">Guerra</span>
+  </div>
+
+  <div class="bgMedia">
+    <div class="bgThumb">
+      <div class="bgThumbEmpty">Sin imagen<br>por ahora</div>
+    </div>
+
+    <div>
+      <p class="muted">
+        Dicen que la Conflagración convirtió el oeste en un infierno, pero tú ya sobreviviste a uno.
+        La guerra te cambió, y ahora el combate te sale natural. El oeste necesita guerreros… y tú ya estás hecho.
+      </p>
+    </div>
+  </div>
+
+  <div class="bgCols">
+    <div>
+      <h4>Rasgo: Arma del guerrero</h4>
+      <p class="muted">
+        El arma de fuego que posees es la que usaste en la guerra: cuando se descubrió el “fuego del cielo”,
+        se aplicó rápido a la guerra para terminarla antes.
+        Elige 1 propiedad del d8. Además, esta arma ha sido usada extensivamente por ti y es inútil en manos ajenas.
+      </p>
+
+      <div class="rumors">
+        <h4>Rumores (3)</h4>
+        <ul class="rumorList">
+          <li class="rumor">“Hay veteranos que oyen ‘órdenes’ en el viento del oeste… y obedecen sin saber.”</li>
+          <li class="rumor">“Ciertas armas recuerdan. Si las desenvainas, atraen lo que mataron.”</li>
+          <li class="rumor">“Un batallón desapareció en una grieta. A veces su marcha se escucha todavía.”</li>
+        </ul>
+      </div>
+    </div>
+
+    <aside class="bgMeta">
+      <h4>Competencias y equipo</h4>
+      <dl class="kv">
+        <div class="kvItem"><div class="kvKey">Habilidades</div><div class="kvVal">Acrobacias, Atletismo</div></div>
+        <div class="kvItem"><div class="kvKey">Herramientas</div><div class="kvVal">Monturas, 1 tipo de juego</div></div>
+        <div class="kvItem"><div class="kvKey">Idiomas</div><div class="kvVal">—</div></div>
+        <div class="kvItem"><div class="kvKey">Equipo</div><div class="kvVal">Arma de fuego, juego (1), daga con el símbolo de tu escuadrón, uniforme con insignias, ropas comunes, 10 po</div></div>
+      </dl>
+
+      <h4 style="margin-top:12px;">Propiedades (d8)</h4>
+      <ul class="rumorList">
+        <li class="rumor">1 Elige una subraza humanoide: +1 a ataques contra esa subraza</li>
+        <li class="rumor">2 Dispara en silencio</li>
+        <li class="rumor">3 Usa la mitad de munición</li>
+        <li class="rumor">4 Hace daño contundente</li>
+        <li class="rumor">5 Se recarga sola (no elimina “recarga”)</li>
+        <li class="rumor">6 Su alcance aumenta en 20 pies</li>
+        <li class="rumor">7 Tiene una hoja oculta (1d6)</li>
+        <li class="rumor">8 Puede disparar una bengala</li>
+      </ul>
+    </aside>
+  </div>
+</article>
+
+<!-- 12 -->
+<article class="panel bgCard" id="bg-vigía">
+  <div class="bgHeader">
+    <h3>12) La Ley (Law)</h3>
+    <span class="bgTag">Autoridad</span>
+  </div>
+
+  <div class="bgMedia">
+    <div class="bgThumb">
+      <div class="bgThumbEmpty">Sin imagen<br>por ahora</div>
+    </div>
+
+    <div>
+      <p class="muted">
+        El oeste es caos no cartografiado, pero incluso lo desconocido se dobla ante la justicia.
+        Llevas orden a lo indómito: civilización a lo salvaje, ley a los sin ley.
+      </p>
+    </div>
+  </div>
+
+  <div class="bgCols">
+    <div>
+      <h4>Rasgo: Posición de autoridad</h4>
+      <p class="muted">
+        Eres representante de la ley: la gente común te respeta o te teme.
+        Puedes impartir justicia como lo consideres correcto en el oeste; salvo una razón fuerte,
+        la mayoría acatará tu autoridad.
+        Durante tiempos muertos, podrías organizar <b>juicios</b> para criminales capturados.
+      </p>
+
+      <div class="rumors">
+        <h4>Rumores (3)</h4>
+        <ul class="rumorList">
+          <li class="rumor">“Hay delitos que el oeste ‘castiga’ solo, y no le gusta que lo interrumpan.”</li>
+          <li class="rumor">“Un juez antiguo sigue dictando sentencias… desde una sala sin puertas.”</li>
+          <li class="rumor">“Si encarcelas a alguien demasiado cerca de ciertas grietas, algo viene a ‘reclamarlo’.”</li>
+        </ul>
+      </div>
+    </div>
+
+    <aside class="bgMeta">
+      <h4>Competencias y equipo</h4>
+      <dl class="kv">
+        <div class="kvItem"><div class="kvKey">Habilidades</div><div class="kvVal">Perspicacia, Intimidación</div></div>
+        <div class="kvItem"><div class="kvKey">Herramientas</div><div class="kvVal">Monturas</div></div>
+        <div class="kvItem"><div class="kvKey">Idiomas</div><div class="kvVal">1 idioma común</div></div>
+        <div class="kvItem"><div class="kvKey">Equipo</div><div class="kvVal">Placa/insignia de la ley, grilletes, retrato pequeño de alguien del este, ropas comunes, 10 po</div></div>
+      </dl>
+    </aside>
+  </div>
+</article>
+
+
+        <!-- MULTIMESA -->
+        <section class="page p-multimesa" aria-labelledby="h-multimesa">
+          <header class="pageHead">
+            <h2 id="h-multimesa">Multimesa y Multi-DM</h2>
+            <p class="lead">Reglas simples para que el mundo no se rompa cuando crezca.</p>
+          </header>
+
+          <div class="grid two">
+            <article class="panel">
+              <h3>Canon</h3>
+              <ul class="list">
+                <li>Oficial es lo que queda en el Registro (reporte + mapa).</li>
+                <li>Si no está registrado, no cuenta como hecho.</li>
+                <li>Los cambios grandes se anuncian en el tablón.</li>
+              </ul>
+            </article>
+            <article class="panel">
+              <h3>Coordinación futura con más DMs</h3>
+              <ul class="list">
+                <li>Un calendario único de expediciones.</li>
+                <li>Regla de paralelismo para zonas “ocupadas” por fecha ficticia.</li>
+                <li>Paquete DM: tono/letalidad/recompensas consistentes.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <!-- HERRAMIENTAS -->
+        <section class="page p-herramientas" aria-labelledby="h-herramientas">
+          <header class="pageHead">
+            <h2 id="h-herramientas">Herramientas compartidas</h2>
+            <p class="lead">Sin esto, un West Marches se desordena. Con esto, se vuelve adictivo.</p>
+          </header>
+
+          <div class="grid two">
+            <article class="panel">
+              <h3>Lo mínimo</h3>
+              <ul class="list">
+                <li>Mapa compartido (rutas/zonas/refugios).</li>
+                <li>Registro de expediciones (reportes breves y claros).</li>
+                <li>Roster (personajes, nivel, estado).</li>
+                <li>Tablón (rumores/contratos/objetivos).</li>
+              </ul>
+            </article>
+
+            <article class="panel">
+              <h3>Plantilla de reporte</h3>
+              <pre class="code">Fecha:
+Party:
+Objetivo:
+Ruta:
+Hallazgos:
+Amenazas:
+Botín:
+Pendientes:
+Notas para otros grupos:</pre>
+            </article>
+          </div>
+        </section>
+
+        
+         <!-- REGISTRO -->
+<section class="page p-registro" aria-labelledby="h-registro">
+  <header class="pageHead">
+    <h2 id="h-registro">Registro de Expediciones</h2>
+    <p class="lead">
+      Archivo oficial de la fortaleza.  
+      Todo lo validado aquí es canon.
+    </p>
+  </header>
+
+  <article class="panel callout">
+    <h3>Norma del Registro</h3>
+    <p class="muted">
+      Toda expedición debe entregar reporte escrito, cartografía o evidencia útil.
+      Sin registro, no hay progreso.
+    </p>
+  </article>
+
+  <!-- EJEMPLO DE ENTRADA -->
+  <article class="panel logEntry prologue">
+  <div class="logHead">
+    <div>
+      <h3>Registro #000 — “El Comunicado”</h3>
+      <p class="muted">Entrada fundacional · Apertura de operaciones</p>
+    </div>
+    <span class="entryType">Fundacional</span>
+  </div>
+
+  <ul class="logMeta">
+    <li><b>Fecha:</b> Registro inicial</li>
+    <li><b>Party:</b> —</li>
+    <li><b>Objetivo:</b> Notificar a facción aliada (por definir) y solicitar exploradores calificados</li>
+    <li><b>Ruta:</b> Comunicaciones externas desde la Fortaleza</li>
+    <li><b>Hallazgos:</b> Confirmación de frontera no cartografiada en el Underdark</li>
+    <li><b>Amenazas:</b> Oleadas de faerzress; aumento de acecho ante presencia sostenida</li>
+    <li><b>Botín:</b> —</li>
+    <li><b>Pendientes:</b> Recepción de exploradores, guías, cartógrafos y especialistas de logística</li>
+    <li><b>Notas para otros grupos:</b> Toda expedición inicia y termina en la Fortaleza; reporte obligatorio</li>
+  </ul>
+
+  <p class="logText">
+    Se ha emitido el comunicado oficial. La Fortaleza operará como punto de retorno, reabastecimiento básico
+    y archivo central de conocimiento compartido. Toda información útil deberá registrarse con precisión para
+    reducir pérdidas y sostener operaciones multigrupo.
+  </p>
+</article>
+</section>
+        <section class="page p-faq" aria-labelledby="h-faq">
+  <header class="pageHead">
+    <h2 id="h-faq">FAQ</h2>
+    <p class="lead">Respuestas cortas y reglas que sostienen el formato sin discusión eterna.</p>
+  </header>
+
+  <!-- REGLAS FUNDAMENTALES -->
+  <article class="panel rulesBox">
+    <div class="rulesHead">
+      <h3>Reglas fundamentales</h3>
+      <span class="badge">se aplican siempre</span>
+    </div>
+
+    <ul class="rulesList">
+      <li>
+        <div class="ruleTitle">D&D 2024</div>
+        <p class="muted">
+          Para efectos de este west march, utilizaremos las reglas básicas de D&D 2024 (Manual del Jugador, Guía del DM y Manual de Monstruos).
+        </p>
+      </li>  
+
+      <li>
+        <div class="ruleTitle">Peso y carga</div>
+        <p class="muted">
+          Las reglas de peso serán monitoreadas. El inventario importa: herramientas, provisiones y botín tienen costo real.
+        </p>
+      </li>
+
+      <li>
+        <div class="ruleTitle">La Fortaleza como punto de apoyo</div>
+        <p class="muted">
+          La fortaleza cuenta con recursos básicos para reabastecerse y descansar. Es el punto de retorno y reinicio de las expediciones.
+        </p>
+      </li>
+
+      <li>
+        <div class="ruleTitle">Subidas de nivel</div>
+        <p class="muted">
+          Se progresa por: experiencia de enfrentamientos, reportes entregados, y cartografía. Otros registros útiles para la Guild
+          (rutas seguras, refugios, peligros, contactos, recursos) también otorgan puntos.
+        </p>
+      </li>
+
+      <li>
+        <div class="ruleTitle">Niveles mixtos y nuevos personajes</div>
+        <p class="muted">
+          Todo jugador nuevo comienza en <b>nivel 1</b>. Los grupos pueden estar conformados por personajes de distintos niveles.
+          El mundo no se “ajusta” automáticamente: se eligen objetivos acordes y se juega con criterio.
+        </p>
+      </li>
+    </ul>
+  </article>
+
+  <!-- PREGUNTAS -->
+  <details class="faq" open>
+    <summary>¿Qué pasa si no alcanzamos a volver a la Base?</summary>
+    <div class="faqBody">
+      <ul class="list">
+        <li>Se aplica cierre de expedición: retirada lógica, riesgo real.</li>
+        <li>El estado final queda registrado (para rescate o consecuencias).</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>¿Puede morir un personaje?</summary>
+    <div class="faqBody">
+      <p class="muted">Sí. El Underdark no es justo. Medir riesgo es parte central del juego.</p>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>¿Cómo se evita el desorden con tantos jugadores?</summary>
+    <div class="faqBody">
+      <ul class="list">
+        <li>Registro obligatorio: reporte + mapa actualizado.</li>
+        <li>Un tablón de objetivos/rumores para coordinar expediciones.</li>
+        <li>La fortaleza es el punto común: todo inicia/termina allí.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>¿Puedo jugar poco y aun así sentir progreso?</summary>
+    <div class="faqBody">
+      <p class="muted">
+        Sí. El progreso es información compartida y consecuencias persistentes. Puedes volver, leer reportes, elegir objetivo y salir.
+      </p>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>¿Podemos sumar manuales de reglas complementarias?</summary>
+    <div class="faqBody">
+      <p class="muted">
+        Se jugará utilizando las versiones básicas de los manuales de DND 2024. Recordando que el foco es exploración y supervivencia, se pueden sumar reglas opcionales siempre que: estas aporten a la experiencia West Marches,
+        no ralenticen el juego, y sean aceptadas por el Narrador o DM.
+      </p>
+    </div>
+  </details>
+
+</section>
+
+        <footer class="footer">
+          <div class="muted">Manual vivo · Actualizado por el Registro de expediciones</div>
+        </footer>
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>
