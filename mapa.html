@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Mapa — Underdark West Marches</title>
+  <link rel="stylesheet" href="./styles.css?v=1" />
+</head>
+<body>
+  <div class="fog" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="topbarInner">
+      <div class="brand">
+        <span class="sigil" aria-hidden="true"></span>
+        <div class="brandText">
+          <h1>Manual del Jugador</h1>
+          <div class="tags">
+            <span class="tag">D&D 2024</span><span class="tag tag2">West Marches</span><span class="tag">Mapa</span>
+          </div>
+          <p class="subtitle">Mapa canónico · Vista integrada (Miro)</p>
+        </div>
+      </div>
+      <div class="topActions">
+        <a class="btn ghost" href="./index.html">Inicio</a>
+        <a class="btn" href="./registro.html">Registro</a>
+        <a class="btn primary" href="./referencias.html">Referencias</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="sidebarInner">
+        <div class="navTitle">Índice</div>
+        <nav class="nav">
+          <a class="navLink" href="./index.html"><span class="dot"></span> Inicio</a>
+          <div class="navGroupTitle">Operación</div>
+          <a class="navLink" href="./mapa.html"><span class="dot"></span> Mapa</a>
+          <a class="navLink" href="./faq.html"><span class="dot"></span> FAQ</a>
+          <a class="navLink" href="./registro.html"><span class="dot"></span> Registro</a>
+        </nav>
+
+        <div class="sidebarCard">
+          <div class="cardTitle">Cómo se usa</div>
+          <ul class="miniList">
+            <li>El mapa se actualiza por el DM</li>
+            <li>Lo “revelado” es canon</li>
+            <li>Si algo no está en Registro, no existe</li>
+          </ul>
+        </div>
+
+        <div class="sidebarCard subtle">
+          <div class="cardTitle">Tip</div>
+          <p class="muted">
+            Si el embed falla (bloqueadores / permisos), usa el botón “Abrir en Miro”.
+          </p>
+          <a class="btn ghost" href="https://miro.com/app/live-embed/uXjVK0nImsw=/?focusWidget=3458764654201640818&embedMode=view_only_without_ui&embedId=142408951709"
+             target="_blank" rel="noopener noreferrer">Abrir en Miro</a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="doc">
+        <div class="crumbs">
+          <span class="crumb">Underdark West Marches</span><span class="sep">›</span>
+          <span class="crumb current">Mapa</span>
+        </div>
+
+        <div class="docInner">
+          <article class="panel callout">
+            <h3>Mapa oficial</h3>
+            <p class="muted">
+              El mapa integrado muestra el estado actual del territorio explorado. Las capas (Z) y zonas se administran en Miro.
+            </p>
+          </article>
+
+          <div class="grid two" style="margin-top:12px;">
+            <article class="panel" style="min-height:70vh;">
+              <h3>Vista</h3>
+
+              <div class="embedFrame">
+                <iframe
+                  title="Mapa Underdark West Marches (Miro)"
+                  src="https://miro.com/app/live-embed/uXjVK0nImsw=/?focusWidget=3458764654201640818&embedMode=view_only_without_ui&embedId=142408951709"
+                  frameborder="0"
+                  scrolling="no"
+                  allow="fullscreen; clipboard-read; clipboard-write"
+                  allowfullscreen>
+                </iframe>
+              </div>
+
+              <p class="muted" style="margin-top:10px;">
+                Si no aparece, revisa bloqueadores (adblock / anti-tracking) o abre en una pestaña nueva.
+              </p>
+            </article>
+
+            <article class="panel">
+              <h3>Notas de navegación</h3>
+              <ul class="list">
+                <li><b>Coordenadas:</b> usa el sistema (x,y,z) acordado en el tablero.</li>
+                <li><b>Capas:</b> Z=0 es el umbral / fortaleza; valores negativos son profundidad.</li>
+                <li><b>Cardinales:</b> Norte arriba, Este derecha (en el tablero).</li>
+                <li><b>POIs:</b> cada punto importante debe enlazarse o referenciar una entrada de Registro.</li>
+              </ul>
+
+              <div class="panel callout" style="margin-top:12px;">
+                <h3>Formato sugerido de POI</h3>
+                <pre class="code">POI: (x,y,z)
+Nombre:
+Tipo: ruina / bioma / amenaza / recurso
+Resumen (1 línea):
+Link Registro (si aplica):</pre>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div><b>Nota legal:</b> Dungeons &amp; Dragons y Wizards of the Coast son marcas registradas de Wizards of the Coast LLC. Este sitio es material de fans sin afiliación. No se pretende infringir derechos. Todo el contenido original del setting y textos propios pertenece a su autor.</div>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script src="./main.js?v=1" defer></script>
+</body>
+</html>

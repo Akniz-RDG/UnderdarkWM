@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Ganchos — Underdark West Marches</title>
+  <link rel="stylesheet" href="./styles.css?v=1" />
+</head>
+<body>
+  <div class="fog" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="topbarInner">
+      <div class="brand">
+        <span class="sigil" aria-hidden="true"></span>
+        <div class="brandText">
+          <h1>Manual del Jugador</h1>
+          <div class="tags">
+            <span class="tag">D&D 2024</span><span class="tag tag2">West Marches</span><span class="tag">Ganchos</span>
+          </div>
+          <p class="subtitle">Motivaciones · Rasgos · Ideales · Vínculos · Defectos</p>
+        </div>
+      </div>
+      <div class="topActions">
+        <a class="btn ghost" href="./personajes.html">Personajes</a>
+        <a class="btn primary" href="./registro.html">Registro</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="sidebarInner">
+        <div class="navTitle">Índice</div>
+        <nav class="nav">
+          <a class="navLink" href="./index.html"><span class="dot"></span> Inicio</a>
+
+          <div class="navGroupTitle">El Setting</div>
+          <a class="navLink" href="./setting.html"><span class="dot"></span> Visión general</a>
+          <a class="navLink" href="./referencias.html"><span class="dot"></span> Referencias visuales</a>
+
+          <div class="navGroupTitle">Formato</div>
+          <a class="navLink" href="./como-se-juega.html"><span class="dot"></span> Cómo se juega</a>
+          <a class="navLink" href="./personajes.html"><span class="dot"></span> Personajes</a>
+          <a class="navLink" href="./trasfondos.html"><span class="dot"></span> Trasfondos</a>
+          <a class="navLink" href="./ganchos.html"><span class="dot"></span> Ganchos</a>
+          <a class="navLink" href="./multimesa.html"><span class="dot"></span> Multimesa y Multi-DM</a>
+
+          <div class="navGroupTitle">Operación</div>
+          <a class="navLink" href="./herramientas.html"><span class="dot"></span> Herramientas compartidas</a>
+          <a class="navLink" href="./faq.html"><span class="dot"></span> FAQ</a>
+          <a class="navLink" href="./registro.html"><span class="dot"></span> Registro</a>
+          <a class="navLink" href="./mapa.html"><span class="dot"></span> Mapa</a>
+        </nav>
+
+        <div class="sidebarCard">
+          <div class="cardTitle">Cómo usar esta página</div>
+          <p class="muted">
+            Elige 1–2 opciones de cada bloque (o tira un dado). Lo importante es que tu personaje
+            tenga razones para <b>salir</b>, <b>volver</b> y <b>reportar</b>.
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="doc">
+        <div class="crumbs">
+          <span class="crumb">Underdark West Marches</span><span class="sep">›</span>
+          <span class="crumb current">Ganchos</span>
+        </div>
+
+        <div class="docInner">
+          <article class="panel callout">
+            <h3>Qué es un “gancho” en este West March</h3>
+            <ul class="list">
+              <li>Es tu razón para <b>estar en Las Paredes</b> y <b>aceptar expediciones</b>.</li>
+              <li>Debe justificar también por qué vuelves: <b>sobrevivir importa</b>.</li>
+              <li>El formato premia a quienes aportan: <b>información, mapas, muestras, botín, pruebas</b>.</li>
+            </ul>
+          </article>
+
+          <article class="panel" style="margin-top:12px;">
+            <h3>Regla rápida</h3>
+            <p class="muted">
+              Si tu personaje no tiene una razón concreta para <b>volver vivo</b> con algo que sirva al Registro,
+              entonces no es un buen personaje para este formato.
+            </p>
+          </article>
+
+          <div class="bgGrid" style="margin-top:12px;">
+
+            <!-- MOTIVOS (HITOS) -->
+            <article class="panel bgCard" id="g-motivos">
+              <div class="bgHeader">
+                <h3>Hitos / Motivaciones</h3>
+                <span class="bgTag">Por qué estás aquí</span>
+              </div>
+
+              <div class="bgCols">
+                <div>
+                  <h4>Elige 1–2 (o tira d12)</h4>
+                  <ul class="rumorList">
+                    <li class="rumor"><b>1.</b> Alguien cercano bajó y no volvió. Traer su prueba (o su verdad) es tu objetivo.</li>
+                    <li class="rumor"><b>2.</b> Juraste cartografiar “lo imposible”: un mapa real vale más que el oro.</li>
+                    <li class="rumor"><b>3.</b> Buscas una muestra del Faezress o una explicación: tu vida (o tu fe) depende de eso.</li>
+                    <li class="rumor"><b>4.</b> Debes pagar una deuda. Las Paredes pagan por información y resultados.</li>
+                    <li class="rumor"><b>5.</b> Viste algo en sueños: un símbolo, una grieta, una estrella roja… y ahora lo sigues.</li>
+                    <li class="rumor"><b>6.</b> Eres “compatible” con algo allá abajo: cuando te acercas, el mundo se ordena (o se rompe).</li>
+                    <li class="rumor"><b>7.</b> Te encargaron vigilar a una facción o financiador. Tu trabajo es observar y reportar.</li>
+                    <li class="rumor"><b>8.</b> Tu familia necesita un hallazgo para sostenerse: mineral, reliquia, acuerdo, ruta.</li>
+                    <li class="rumor"><b>9.</b> Estás cazando una criatura específica. No por gloria: por necesidad.</li>
+                    <li class="rumor"><b>10.</b> Temes que “algo” suba. Si entiendes cómo se mueve, quizás puedas frenarlo.</li>
+                    <li class="rumor"><b>11.</b> Te prometieron acceso a un secreto prohibido si entregas pruebas de campo.</li>
+                    <li class="rumor"><b>12.</b> No estás aquí por elección. Las Paredes son tu única salida… hacia abajo.</li>
+                  </ul>
+                </div>
+
+                <aside class="bgMeta">
+                  <h4>Consejo</h4>
+                  <p class="muted">
+                    Convierte tu motivo en acción: “Traeré una muestra”, “trazaré 3 hitos”, “volveré con un nombre”, “probaré este rumor”.
+                  </p>
+                </aside>
+              </div>
+            </article>
+
+            <!-- RASGOS -->
+            <article class="panel bgCard" id="g-rasgos">
+              <div class="bgHeader">
+                <h3>Rasgos</h3>
+                <span class="bgTag">Cómo actúas</span>
+              </div>
+
+              <div class="bgCols">
+                <div>
+                  <h4>Elige 1–2 (o d12)</h4>
+                  <ul class="rumorList">
+                    <li class="rumor"><b>1.</b> Hablo poco; marco rutas y detalles en cualquier superficie.</li>
+                    <li class="rumor"><b>2.</b> Siempre cuento antorchas, cuerda y salidas. Siempre.</li>
+                    <li class="rumor"><b>3.</b> Si alguien exagera un reporte, lo confronto en público.</li>
+                    <li class="rumor"><b>4.</b> Colecciono muestras: polvo, hongos, piedras, tejidos. Todo puede servir.</li>
+                    <li class="rumor"><b>5.</b> Me siento más cómodo bajo tierra que bajo el cielo.</li>
+                    <li class="rumor"><b>6.</b> No confío en mapas “bonitos”. Confío en cicatrices y medidas.</li>
+                    <li class="rumor"><b>7.</b> Siempre pregunto “¿qué ganamos?” antes de arriesgar una vida.</li>
+                    <li class="rumor"><b>8.</b> Cuando algo me asusta, me vuelvo metódico y frío.</li>
+                    <li class="rumor"><b>9.</b> Me obsesiona entender patrones: ruidos, corrientes, marcas, hábitos.</li>
+                    <li class="rumor"><b>10.</b> Me cuesta dormir si no cierro una puerta con mis propias manos.</li>
+                    <li class="rumor"><b>11.</b> Me interesa la gente útil; el resto es ruido.</li>
+                    <li class="rumor"><b>12.</b> Tengo un humor seco. En la oscuridad, reír es respirar.</li>
+                  </ul>
+                </div>
+
+                <aside class="bgMeta">
+                  <h4>Tip de mesa</h4>
+                  <p class="muted">
+                    Un rasgo bueno genera decisiones concretas: “retrocedo”, “anoto”, “no gasto recursos”, “insisto en volver”.
+                  </p>
+                </aside>
+              </div>
+            </article>
+
+            <!-- IDEALES -->
+            <article class="panel bgCard" id="g-ideales">
+              <div class="bgHeader">
+                <h3>Ideales</h3>
+                <span class="bgTag">Qué priorizas</span>
+              </div>
+
+              <div class="bgCols">
+                <div>
+                  <h4>Elige 1 (o d12)</h4>
+                  <ul class="rumorList">
+                    <li class="rumor"><b>1.</b> <b>Supervivencia.</b> Volver vivo es la primera victoria.</li>
+                    <li class="rumor"><b>2.</b> <b>Verdad.</b> Un reporte exacto vale más que una hazaña.</li>
+                    <li class="rumor"><b>3.</b> <b>Utilidad.</b> Si no ayuda a Las Paredes, no vale el riesgo.</li>
+                    <li class="rumor"><b>4.</b> <b>Libertad.</b> Nadie decide por mí cuándo bajar ni cuándo volver.</li>
+                    <li class="rumor"><b>5.</b> <b>Deuda.</b> Todo lo que hago es para saldar algo.</li>
+                    <li class="rumor"><b>6.</b> <b>Fe.</b> Incluso aquí, algo escucha. Y respondo a eso.</li>
+                    <li class="rumor"><b>7.</b> <b>Poder.</b> Lo desconocido se conquista: con acero, magia o contrato.</li>
+                    <li class="rumor"><b>8.</b> <b>Conocimiento.</b> Si entiendo el Faezress, entiendo el futuro.</li>
+                    <li class="rumor"><b>9.</b> <b>Orden.</b> Sin reglas, Las Paredes se vuelve una tumba.</li>
+                    <li class="rumor"><b>10.</b> <b>Redención.</b> Bajar es mi forma de reparar lo que hice arriba.</li>
+                    <li class="rumor"><b>11.</b> <b>Ambición.</b> Ser el primero en nombrar algo cambia la historia.</li>
+                    <li class="rumor"><b>12.</b> <b>Protección.</b> La gente común merece volver a ver la luz.</li>
+                  </ul>
+                </div>
+
+                <aside class="bgMeta">
+                  <h4>Consejo</h4>
+                  <p class="muted">
+                    Tu ideal debe explicar por qué a veces dirás “no” a una expedición y por qué otras insistirás en ir.
+                  </p>
+                </aside>
+              </div>
+            </article>
+
+            <!-- VINCULOS -->
+            <article class="panel bgCard" id="g-vinculos">
+              <div class="bgHeader">
+                <h3>Vínculos</h3>
+                <span class="bgTag">Qué te ata</span>
+              </div>
+
+              <div class="bgCols">
+                <div>
+                  <h4>Elige 1 (o d12)</h4>
+                  <ul class="rumorList">
+                    <li class="rumor"><b>1.</b> Debo proteger a un novato. Si cae, su culpa será mía.</li>
+                    <li class="rumor"><b>2.</b> Tengo un contacto en la fortaleza que me consigue permisos… por un precio.</li>
+                    <li class="rumor"><b>3.</b> El Registro es mi obra: si lo ensucian con mentiras, lo defiendo.</li>
+                    <li class="rumor"><b>4.</b> La primera expedición me salvó la vida. Les debo una segunda.</li>
+                    <li class="rumor"><b>5.</b> Mi familia espera un hallazgo. Sin eso, vuelvo derrotado.</li>
+                    <li class="rumor"><b>6.</b> Un símbolo me persigue. Cuando lo veo, sé que debo seguir.</li>
+                    <li class="rumor"><b>7.</b> Traigo una carta sellada para alguien que vive “más abajo”. No sé quién es.</li>
+                    <li class="rumor"><b>8.</b> Un templo/círculo/archivo me respalda. Si fallo, pierdo ese refugio.</li>
+                    <li class="rumor"><b>9.</b> Tengo un rival aquí. Competimos por ser “el primero” en cada descubrimiento.</li>
+                    <li class="rumor"><b>10.</b> Un monstruo me dejó una marca. Si no lo enfrento, no podré seguir.</li>
+                    <li class="rumor"><b>11.</b> Me prometieron un lugar en Las Paredes si entrego resultados constantes.</li>
+                    <li class="rumor"><b>12.</b> Estoy buscando a alguien que se esconde entre los expedicionarios.</li>
+                  </ul>
+                </div>
+
+                <aside class="bgMeta">
+                  <h4>Tip</h4>
+                  <p class="muted">
+                    Un vínculo útil te da escenas sociales rápidas en bastión: pedidos, conflictos, favores, deudas, reputación.
+                  </p>
+                </aside>
+              </div>
+            </article>
+
+            <!-- DEFECTOS -->
+            <article class="panel bgCard" id="g-defectos">
+              <div class="bgHeader">
+                <h3>Defectos</h3>
+                <span class="bgTag">Qué te complica</span>
+              </div>
+
+              <div class="bgCols">
+                <div>
+                  <h4>Elige 1 (o d12)</h4>
+                  <ul class="rumorList">
+                    <li class="rumor"><b>1.</b> No puedo dejar un misterio sin resolver, aunque sea mala idea.</li>
+                    <li class="rumor"><b>2.</b> Subestimo el peligro: “una sala más” me ha costado caro.</li>
+                    <li class="rumor"><b>3.</b> Soy territorial con el Registro: me cuesta compartir información.</li>
+                    <li class="rumor"><b>4.</b> Me cuesta obedecer retiradas. Me lo tomo personal.</li>
+                    <li class="rumor"><b>5.</b> El oro me calma. Cuando falta, tomo riesgos.</li>
+                    <li class="rumor"><b>6.</b> Tengo pesadillas con la oscuridad. En combate, a veces me bloqueo.</li>
+                    <li class="rumor"><b>7.</b> Miento para “mejorar” un reporte. A veces se me pasa la mano.</li>
+                    <li class="rumor"><b>8.</b> Me obsesiono con un enemigo y pierdo el panorama.</li>
+                    <li class="rumor"><b>9.</b> No confío en nadie: reviso bolsas, cierres, nudos y palabras.</li>
+                    <li class="rumor"><b>10.</b> Si me faltan recursos, me pongo agresivo con el grupo.</li>
+                    <li class="rumor"><b>11.</b> Me atrae el Faezress. Sé que me hace daño… y aun así me acerco.</li>
+                    <li class="rumor"><b>12.</b> Me cuesta aceptar ayuda. Prefiero caer antes que deber algo.</li>
+                  </ul>
+                </div>
+
+                <aside class="bgMeta">
+                  <h4>Regla de oro</h4>
+                  <p class="muted">
+                    Un defecto está bien si genera drama <b>sin romper la mesa</b>. Si te vuelve injugable, cámbialo.
+                  </p>
+                </aside>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div><b>Nota legal:</b> Dungeons &amp; Dragons y Wizards of the Coast son marcas registradas de Wizards of the Coast LLC. Este sitio es material de fans sin afiliación. No se pretende infringir derechos. Todo el contenido original del setting y textos propios pertenece a su autor.</div>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script src="./main.js?v=1" defer></script>
+</body>
+</html>
